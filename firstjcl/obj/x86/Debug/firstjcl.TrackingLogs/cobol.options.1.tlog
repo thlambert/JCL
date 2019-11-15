@@ -1,0 +1,6 @@
+^J:\SDI\FIRSTJCL\JCLCREAT.CBL
+MFCBT_Directives=int"J:obj\x86\Debug\JCLCREAT.int" dialect"ENTCOBOL" anim cobidy".\bin\x86\Debug\" sourcetabstop"4" nocoboldir noquery osext() warnings"1" max-error"100" charset"ASCII" . MFCBT_CopyPaths=
+^J:\SDI\FIRSTJCL\JCLREAD.CBL
+MFCBT_Directives=int"J:obj\x86\Debug\JCLREAD.int" dialect"ENTCOBOL" anim cobidy".\bin\x86\Debug\" sourcetabstop"4" nocoboldir noquery osext() warnings"1" max-error"100" charset"ASCII" . MFCBT_CopyPaths=
+^J:\SDI\FIRSTJCL\INVENT.CBL
+MFCBT_Directives=int"J:obj\x86\Debug\INVENT.int" dialect"ENTCOBOL" anim cobidy".\bin\x86\Debug\" sourcetabstop"4" nocoboldir noquery osext() warnings"1" max-error"100" charset"ASCII" . MFCBT_CopyPaths=

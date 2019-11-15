@@ -1,0 +1,32 @@
+     *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+     *-*-*  Micro Focus ESJCL  ASCII  JES2 Version ED3.0_022                                   *-*-*
+     *-*-*  Copyright (C) 1997-2017 Micro Focus. All rights reserved.                          *-*-*
+     *-*-*  Job: 0001015 Name: TOM      User: JESUSER  Date: 04/02/19 Time: 11:32:09           *-*-*
+     *-*-*  File: $TXRFDIR/T000000087.T                                                        *-*-*
+     *-*-*  DSN:                                                                               *-*-*
+     *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+   1 //TOM      JOB   'TEST JCL',LAMBERT,CLASS=B
+   2 //DOSTUFF  EXEC  PGM=INVENT
+   3 //TFILE    DD    DSNAME=TRANS.FILE,DISP=SHR
+   4 //DFILE    DD    DSNAME=MASTER.FILE,DISP=(NEW,KEEP,DELETE),
+   5 //        DCB=(DSORG=PS,RECFM=FB,LRECL=54),
+   6 //        UNIT=SYSDA,SPACE=(TRK,(2,1))
+   7 //SYSOUT   DD SYSOUT=A
+   8 //
+**** JCLCM0180I Job ready for execution.
+**** Execution on Server TJL       Process       3008
+
+     11:32:10 JCLCM0188I JOB  STARTED
+
+     11:32:10 JCLCM0190I STEP STARTED   DOSTUFF
+     11:32:10 JCLCM0199I Program INVENT   is COBOL VSC2  ASCII  Big-Endian    NOAMODE.
+     TRANS.FILE                                                        TFILE
+      J:\SDI\FIRSTJCL\CATALOG\DATASETS\TRANS.FILE.DAT                   RETAINED
+     MASTER.FILE                                                       DFILE
+      J:\SDI\FIRSTJCL\CATALOG\DATASETS\MASTER.FILE.DAT                  DELETED
+     Y2019.S0402.S113209.J0001015.D00001.SYSOUT                        SYSOUT
+      J:\SDI\FIRSTJCL\CATALOG\DATASETS*3209.J0001015.D00001.SYSOUT.DAT  REMOVED
+==>> 11:32:10 JCLCM0192S STEP ABENDED   DOSTUFF - COND CODE RTS0013
+
+==>> 11:32:10 JCLCM0181S JOB  ABENDED - COND CODE RTS0013
